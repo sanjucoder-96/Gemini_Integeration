@@ -1,9 +1,9 @@
-Gemini Powered Voice Assistant
+# Gemini Powered Voice Assistant
 A Python-based voice assistant that uses the Google Gemini API to understand natural language and execute local commands on a computer.
 
 This project to designed to be an extension of my previous python voice assistant project. This projecct works dynamically without any fixed key words to use functionalities . It separates the AI's natural language understanding from the local system's action execution, allowing for a robust and modular design.
 
-Features
+# Features
 Natural Language Understanding: Uses the Gemini's Capabilities in converting the complex commands to simpler ones.
 
 Direct Answers: Can answer general knowledge questions and updates directly from the Gemini model.
@@ -20,7 +20,7 @@ Web Integration: plays YouTube videos, and open websites.
 
 Modular approach: The system is designed with a functionalities pattern(dictionary of functions), making it easy to add new commands and functions.
 
-How It Works
+# How It Works
 The user provides a command (e.g., "open my downloads folder").
 
 A Detailed prompt is prepared that includes a JSON schema of all available commands and their parameters.
@@ -31,7 +31,7 @@ Gemini analyzes the request and returns a structured JSON object containing eith
 
 A Python object  receives this JSON, maps the code to the correct Python function, and executes it with the provided parameters.
 
-Setup and Installation
+# Setup and Installation
 Follow the below steps to get the assistant running on your local system.
 
 1. Prerequisites
@@ -48,11 +48,11 @@ cd your-repository-name
 3. Install Dependencies
 It's recommended to use a virtual environment.
 
-# Create and activate a virtual environment (optional but recommended)
+ Create and activate a virtual environment (optional but recommended)
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
-# Install the required Python libraries
+ Install the required Python libraries
 pip install -r requirements.txt
 
 You will need to create a requirements.txt file with the following content:
