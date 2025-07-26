@@ -3,3 +3,5 @@ SpeechRecognition
 requests
 wikipedia
 pywhatkit
+google
+google-generativeai
