@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code temporary file
+tempCodeRunnerFile.py
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.env
+
+# Windows executable (you can comment/uncomment based on your choice)
+nircmd.exe
+
+# Python virtual environment
+venv/
+env/

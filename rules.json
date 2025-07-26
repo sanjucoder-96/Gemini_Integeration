@@ -1,0 +1,73 @@
+{
+  "commands": [
+    {"code": "general",
+      "definition": "answers the questions that can be answered by just doing a google search or by the knowledge of the AI",
+      "action": "self" },
+      {
+        "code":"weather",
+         "definition":"tells about weatherforecast for a city",
+         "action":"by the system",
+         "parameters":[
+         { "name":"city",
+          "definition":"name of city to tell about the weather forecast"
+         }
+         ]
+      }, {
+      "code": "vol_up",
+      "definition": "increases the system's  volume.",
+      "action": "by the system"
+    },{
+      "code": "vol_down",
+      "definition": "lowers system's  volume.",
+      "action": "by the system"
+    },{
+      "code":"mute_vol",
+      "definition": "mutes the system's volume ",
+      "action":"by the system"
+      },{
+      "code": "terminate",
+      "definition": "shut down the system or turn off the system",
+      "action": "by the system"
+    }, {
+      "code": "navigate",
+      "definition": "open a folder by its name",
+      "action": "by the system",
+      "parameters": [
+        {
+          "name": "name",
+          "definition": "The name of the folder to open"}
+      ]
+    }, {
+      "code": "browse",
+      "definition": "opens the website user asked to open in webbrowser",
+      "action": "by the system",
+      "parameters": [
+        {
+          "name": "query",
+          "definition": "the name or url of the website to open"
+        }
+      ]
+    },
+    {
+      "code":"news",
+      "definition":"Reads the top  headlines of todays news.",
+      "action":"by the system"
+    },
+    {
+      "code": "youtube",
+      "definition": "searches and plays a video on the youtube based on a the users asked topic.",
+      "action": "by the system",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "The search term or video title for YouTube"
+        }
+      ]
+    },
+    {
+      "code": "none",
+      "definition": "A command to return when the request asked by the user did not match any of the capability.",
+      "action": "by the system"
+    }
+  ]
+}
