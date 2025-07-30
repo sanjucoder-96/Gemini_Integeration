@@ -13,8 +13,8 @@ def process_command(response):
     keys_list=res_dict.keys();
 
     if("answer" in keys_list):
-        speak(res_dict["answer"])
-        return
+        return (res_dict["answer"])
+    
     command_code=res_dict["code"]
     params=res_dict.get("parameters",{})
     task=function.get(command_code,none)
