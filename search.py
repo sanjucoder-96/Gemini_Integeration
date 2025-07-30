@@ -8,6 +8,7 @@ import webbrowser
 
 def open_link(query):
     webbrowser.open(f"https://{query}")
+    return f"Opening the Link {query}"
 
 def search_youtube(query):
     try:

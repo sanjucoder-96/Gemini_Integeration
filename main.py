@@ -24,15 +24,17 @@ def speak(text):
     print(text)
     engine.say(text)
     engine.runAndWait()
+    
 if __name__=="__main__":
     
-    output=gemini.gemini_ai("open LinkedIn website") #-> to test open links
-    # output=gemini.gemini_ai("How s the weather in Banglore ") -> to test weather related
-    # output=gemini.gemini_ai("Where was Kohinoor originated  ") -> to test general questions
-    # output=gemini.gemini_ai("Who is the 5th president of USA ") -> to test general questions
+    #output=gemini.gemini_ai("open LinkedIn website") #-> to test open links
+    #output=gemini.gemini_ai("How s the weather in Chennai")# -> to test weather related
+    #output=gemini.gemini_ai("Where was Kohinoor originated  ") #-> to test general questions
+    #output=gemini.gemini_ai("Who is the 5th president of USA ") #-> to test general questions
     # output=gemini.gemini_ai("Tell me the top headlines ") -> to test the news functionality
     # output=gemini.gemini_ai("play the chuttamalle song on youtube") -> to test the youtube playing function
     # output=gemini.gemini_ai("decrease the volume of my system") -> sys op
     # output=gemini.gemini_ai("mute the volume of my system") -> sys op
     # output=gemini.gemini_ai("Shutdown the system") -> sys op
-    speak(output)
+    if output:
+        speak(output)

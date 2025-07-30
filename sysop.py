@@ -13,12 +13,15 @@ def volume_down():
 
 def mute_volume():
     os.system("nircmd.exe mutesysvolume 1")
+    return "muted volume"
 
 def unmute_volume():
     os.system("nircmd.exe mutesysvolume 2")
+    return "unmuted volume"
 
 def shut_down():
     os.system("shutdown /s /t 5")
+    return "Terminating....."
 
 
 

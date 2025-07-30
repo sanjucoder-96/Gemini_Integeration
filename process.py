@@ -19,12 +19,9 @@ def process_command(response):
     params=res_dict.get("parameters",{})
     task=function.get(command_code,none)
 
-    if(params!={}):
-        return (task(**params))
-    else:
-      return task()
-
-
+    
+    return (task(**params))
+    
 
     
     
